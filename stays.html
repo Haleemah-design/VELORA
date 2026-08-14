@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Stays — VÉLORA</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+   <link rel="stylesheet" href="velora.css">
+
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header class="stays-navbar">
+
+    <div class="logo"><img src="logo-removebg-preview.png" class="logm" style="width: ;" srcset=""> <span class="logt">É L O R A</span></div>
+
+
+
+        <nav class="stays-nav-links">
+
+            <a href="stays.html">
+                Stays
+            </a>
+
+            <a href="discover.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+ </a>
+
+        
+
+        </nav>
+
+
+        <div class="stays-nav-actions">
+
+            <a href="#">
+                Sign in
+            </a>
+
+            <a href="list-property.html"
+               class="list-property">
+
+                List your property
+
+            </a>
+<a href="velora.html"
+           class="back-home">
+
+            Back to home
+
+        </a>
+        </div>
+
+
+        <button class="menu-btn">
+
+            ☰
+
+        </button>
+
+    </header>
+
+
+    <!-- PAGE HEADER -->
+
+    <main>
+
+
+        <section class="stays-header-section">
+
+            <p class="section-label">
+
+                EXPLORE VÉLORA
+
+            </p>
+
+
+            <h1>
+
+                Find your next
+                <em>beautiful stay.</em>
+
+            </h1>
+
+
+            <p>
+
+                Discover thoughtfully selected homes,
+                apartments, and villas in remarkable destinations.
+
+            </p>
+
+        </section>
+
+
+        <!-- FILTER BAR -->
+
+        <section class="filter-section">
+
+
+            <div class="filter-item">
+
+                <span>
+                    Location
+                </span>
+
+                <select id="locationFilter">
+
+                    <option value="all">
+                        All destinations
+                    </option>
+
+                    <option value="Lagos">
+                        Lagos
+                    </option>
+
+                    <option value="Cape Town">
+                        Cape Town
+                    </option>
+
+                    <option value="Paris">
+                        Abuja
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-item">
+
+                <span>
+                    Property type
+                </span>
+
+                <select id="typeFilter">
+
+                    <option value="all">
+                        All types
+                    </option>
+
+                    <option value="Apartment">
+                        Apartment
+                    </option>
+
+                    <option value="Villa">
+                        Villa
+                    </option>
+
+                    <option value="House">
+                        House
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-item">
+
+                <span>
+                    Guests
+                </span>
+
+                <select id="guestFilter">
+
+                    <option value="all">
+                        Any number
+                    </option>
+
+                    <option value="2">
+                        2+ guests
+                    </option>
+
+                    <option value="4">
+                        4+ guests
+                    </option>
+
+                    <option value="6">
+                        6+ guests
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button id="filterButton">
+
+                Apply filters
+
+            </button>
+
+
+        </section>
+
+
+
+        <!-- PROPERTY GRID -->
+
+        <section class="all-stays-grid"
+                 id="staysGrid">
+
+
+            <!-- PROPERTY 1 -->
+
+            <article class="property-card"
+                     data-location="Lagos"
+                     data-type="Apartment"
+                     data-guests="4"
+                     data-price="250000"
+                     data-property="olive-residence">
+
+                <div class="property-image">
+
+         <a href="property.html"> <img src="bb.jpeg"
+                         alt="The Olive Residence"></a>
+
+                    <button class="favorite-btn">
+
+                        ♡
+
+                    </button>
+
+                </div>
+
+
+                <div class="property-info">
+
+                    <div>
+
+                        <h2>
+                            The Olive Residence
+                        </h2>
+
+                        <p>
+                            Lagos, Nigeria
+                        </p>
+
+                    </div>
+
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                </div>
+
+
+                <p class="property-details">
+
+                    Apartment · 3 bedrooms · 4 guests
+
+                </p>
+
+
+                <p class="property-price">
+
+                    ₦250,000
+                    <span>
+                        / night
+                    </span>
+
+                </p>
+
+            </article>
+
+
+            <!-- PROPERTY 2 -->
+
+            <article class="property-card"
+                     data-location="Cape Town"
+                     data-type="Villa"
+                     data-guests="3"
+                     data-price="180000"
+                     data-property="casa-verde">
+
+
+                <div class="property-image">
+
+                   <a href="casa-verde.html">  <img src="c.jpeg"
+                         alt="Casa Verde"></a>
+
+                    <button class="favorite-btn">
+
+                        ♡
+
+                    </button>
+
+                </div>
+
+
+                <div class="property-info">
+
+                    <div>
+
+                        <h2>
+                            Casa Verde
+                        </h2>
+
+                        <p>
+                            Cape Town, South Africa
+                        </p>
+
+                    </div>
+
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                </div>
+
+
+                <p class="property-details">
+
+                    Villa · 2 bedrooms · 3 guests
+
+                </p>
+
+
+                <p class="property-price">
+
+                   ₦250,000
+                    <span>
+                        / night
+                    </span>
+
+                </p>
+
+            </article>
+
+
+            <!-- PROPERTY 3 -->
+
+            <article class="property-card"
+                     data-location="Lagos"
+                     data-type="House"
+                     data-guests="6"
+                     data-price="300000"
+                     data-property="maré-house">
+
+
+                <div class="property-image">
+
+                   <a href="mare.html">  <img src="b.jpeg"  alt="The Maré House" ></a>
+
+                    <button class="favorite-btn">
+
+                        ♡
+
+                    </button>
+
+                </div>
+
+
+                <div class="property-info">
+
+                    <div>
+
+                        <h2>
+                            The Maré House
+                        </h2>
+
+                        <p>
+                           Abuja, Nigeria
+                        </p>
+
+                    </div>
+
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                </div>
+
+
+                <p class="property-details">
+
+                    House · 4 bedrooms · 6 guests
+
+                </p>
+
+
+                <p class="property-price">
+
+                    ₦250,000
+                    <span>
+                        / night
+                    </span>
+
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h3>VÉLORA</h3>
+
+        <p>
+            Curated stays. Exceptional experiences.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="discover.html">Discover</a>
+            <a href="stays.html">Stays</a>
+            <a href="list-property.html">List Property</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</footer>
+    <script src="velora.js"></script>
+
+</body>
+
+</html>

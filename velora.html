@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VÉLORA — Stay Somewhere Beautiful</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="velora.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo"><img src="logo-removebg-preview.png" class="logm" style="width: ;" srcset=""> <span class="logt">É L O R A</span></div>
+
+    <nav class="nav-links">
+        <a href="stays.html">Stays</a>
+        <a href="#destinations">Destinations</a>
+        <a href="discover.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+        <a href="sign.html" class="sign-in">Sign in</a>
+        <a href="list-property.html" class="list-property">
+            List your property
+        </a>
+    </div>
+
+    <button class="menu-btn">
+        ☰
+    </button>
+
+</header>
+    <main>
+       <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-label">
+            CURATED STAYS · BEAUTIFUL DESTINATIONS
+        </p>
+
+        <h1>
+            Find a place worth staying for.
+        </h1>
+
+        <p class="hero-description">
+            Discover thoughtfully selected stays in the world's most beautiful destinations.
+        </p>
+
+    </div>
+
+    <form class="search-bar"  id="searchForm">
+
+        <div class="search-item">
+           <label for="destination">
+
+                WHERE
+
+            </label>
+
+
+            <input
+                type="text"
+                id="destination"
+                placeholder="Where are you going?"
+                autocomplete="off"
+            >
+
+        </div>
+
+        <div class="search-item">
+            <label for="checkIn">
+
+                CHECK IN
+
+            </label>
+
+
+            <input
+                type="date"
+                id="checkIn"
+
+            >
+        </div>
+
+        <div class="search-item">
+            <<label for="checkOut">
+
+                CHECK OUT
+
+            </label>
+
+
+            <input
+                type="date"
+                id="checkOut"
+            >
+        </div>
+
+        <div class="search-item">
+           <label>
+
+              ADD GUESTS
+
+            </label>
+
+
+            <div class="guest-control">
+
+
+                <button
+                    type="button"
+                    id="decreaseGuests"
+                >
+
+                    −
+
+                </button>
+
+
+                <span id="guestCount">
+
+                    1
+
+                </span>
+
+
+                <button
+                    type="button"
+                    id="increaseGuests"
+                >
+
+                    +
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <button class="search-btn" type="submit">
+            Search
+        </button>
+
+    </form>
+
+</section>
+
+
+        <!-- Introduction section -->
+<section class="intro-section" id="about">
+
+    <div class="intro-content">
+
+        <p class="section-label">
+            THE VÉLORA EXPERIENCE
+        </p>
+
+        <h2>
+            More than a place to stay.
+            <em>A place to belong.</em>
+        </h2>
+
+        <p class="intro-text">
+            At VÉLORA, we believe where you stay shapes how you experience
+            the world. Every property is thoughtfully selected for its
+            character, comfort, and sense of place.
+        </p>
+
+        <a href="about.html" class="text-link">
+            Discover VÉLORA <span>→</span>
+        </a>
+
+    </div>
+
+    <div class="intro-image">
+<video 
+    src="mp.mp4" type="video/mp4"
+   controls
+    autoplay
+    muted
+    loop
+    width="100%">
+</video>    </div>
+
+</section>
+
+        <!-- Featured stays -->
+<section class="featured-stays" id="stays">
+
+    <div class="section-header">
+
+        <div>
+            <p class="section-label">
+                CURATED FOR YOU
+            </p>
+
+            <h2>
+                Stay somewhere
+                <em>beautiful.</em>
+            </h2>
+        </div>
+
+        <a href="stays.html" class="text-link">
+            Explore all stays <span>→</span>
+        </a>
+
+    </div>
+
+
+    <div class="stays-grid">
+
+        <!-- Property 1 -->
+        <article class="stay-card"
+        data-property="olive-residence">
+
+            <div class="stay-image">
+
+                <img src="bb.jpeg"
+                     alt="The Olive Residence">
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="stay-info">
+
+                <div class="stay-title">
+                    <h3>The Olive Residence</h3>
+                    <span>★★★★★</span>
+                </div>
+
+                <p class="stay-location">
+                    Lagos, Nigeria
+                </p>
+
+                <p class="stay-details">
+                    3 bedrooms · 4 guests
+                </p>
+
+                <p class="stay-price">
+                    ₦250,000 <span>/ night</span>
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- Property 2 -->
+        <article class="stay-card">
+
+            <div class="stay-image">
+
+                <img src="c.jpeg"
+                     alt="Casa Verde">
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="stay-info">
+
+                <div class="stay-title">
+                    <h3>Casa Verde</h3>
+                    <span>★★★★★</span>
+                </div>
+
+                <p class="stay-location">
+                    Cape Town, South Africa
+                </p>
+
+                <p class="stay-details">
+                    2 bedrooms · 3 guests
+                </p>
+
+                <p class="stay-price">
+                    ₦250,000 <span>/ night</span>
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- Property 3 -->
+        <article class="stay-card">
+
+            <div class="stay-image">
+
+                <img src="b.jpeg"
+                     alt="The Maré House">
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="stay-info">
+
+                <div class="stay-title">
+                    <h3>The Maré House</h3>
+                    <span>★★★★★</span>
+                </div>
+
+                <p class="stay-location">
+                    Abuja, Nigeria
+                </p>
+
+                <p class="stay-details">
+                    4 bedrooms · 6 guests
+                </p>
+
+                <p class="stay-price">
+                    ₦250,000 <span>/ night</span>
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+        <!-- Destinations -->
+<section class="destinations-section" id="destinations">
+
+    <div class="destinations-header">
+
+        <div>
+            <p class="section-label">
+                DISCOVER THE WORLD
+            </p>
+
+            <h2>
+                Go somewhere
+                <em>beautiful.</em>
+            </h2>
+        </div>
+
+        <p class="destinations-intro">
+            From vibrant cities to quiet coastal escapes,
+            discover destinations worth getting lost in.
+        </p>
+
+    </div>
+
+
+    <div class="destinations-grid">
+
+        <!-- Lagos -->
+        <a href="#" class="destination-card destination-large">
+
+            <img src="a1.jpeg" alt="Lagos">
+
+            <div class="destination-overlay"></div>
+
+            <div class="destination-content">
+                <p>NIGERIA</p>
+                <h3>Lagos</h3>
+                <span>Explore stays →</span>
+            </div>
+
+        </a>
+
+
+        <!-- Cape Town -->
+        <a href="#" class="destination-card">
+
+            <img src="a2.jpeg" alt="Cape Town">
+
+            <div class="destination-overlay"></div>
+
+            <div class="destination-content">
+                <p>SOUTH AFRICA</p>
+                <h3>Cape Town</h3>
+                <span>Explore stays →</span>
+            </div>
+
+        </a>
+
+
+        <!-- Paris -->
+        <a href="#" class="destination-card">
+
+            <img src="a3.jpeg" alt="Paris">
+
+            <div class="destination-overlay"></div>
+
+            <div class="destination-content">
+                <p>NIGERIA</p>
+                <h3>Abuja</h3>
+                <span>Explore stays →</span>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+        <!-- Signature property -->
+<section class="signature-property">
+
+    <div class="signature-image">
+
+        <img src="d.jpeg"
+             alt="The Olive Residence">
+
+        <div class="image-label">
+            VÉLORA SIGNATURE STAY
+        </div>
+
+    </div>
+
+
+    <div class="signature-content">
+
+        <p class="section-label">
+            THE OLIVE RESIDENCE
+        </p>
+
+        <h2>
+            A quiet retreat
+            <em>for slow living.</em>
+        </h2>
+
+        <p class="signature-description">
+            Designed for slow mornings, warm evenings, and unforgettable
+            stays. The Olive Residence is a carefully considered space
+            where architecture, comfort, and nature come together.
+        </p>
+
+
+        <div class="property-details">
+
+            <div>
+                <span>LOCATION</span>
+                <p>Lagos, Nigeria</p>
+            </div>
+
+            <div>
+                <span>GUESTS</span>
+                <p>Up to 4 guests</p>
+            </div>
+
+            <div>
+                <span>BEDROOMS</span>
+                <p>3 bedrooms</p>
+            </div>
+
+        </div>
+
+
+        <a href="property.html" class="text-link">
+            Explore residence <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+        <!-- Services -->
+<section class="services-section">
+
+    <div class="services-header">
+
+        <p class="section-label">
+            THE VÉLORA PROMISE
+        </p>
+
+        <h2>
+            Everything you need.
+            <em>Nothing you don't.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="services-grid">
+
+        <div class="service-item">
+
+            <div class="back1"><span class="service-number">01</span>
+
+            <div class="service-icon">✦</div>
+</div>
+            <h3>Handpicked stays</h3>
+
+            <p>
+                Every property is selected with intention,
+                character, and comfort in mind.
+            </p>
+
+        </div>
+
+
+        <div class="service-item">
+
+           <div class="back2"> <span class="service-number">02</span>
+
+            <div class="service-icon">◌</div>
+</div>
+            <h3>Effortless booking</h3>
+
+            <p>
+                From discovery to check-in, everything
+                is designed to feel simple and seamless.
+            </p>
+
+        </div>
+
+
+        <div class="service-item">
+
+           <div class="back3"> <span class="service-number">03</span>
+
+            <div class="service-icon">⌂</div></div>
+
+            <h3>Thoughtful hospitality</h3>
+
+            <p>
+                The details matter. Enjoy stays designed
+                around comfort, care, and ease.
+            </p>
+
+        </div>
+
+
+        <div class="service-item">
+
+           <div class="back4"> <span class="service-number">04</span>
+
+            <div class="service-icon">↗</div></div>
+
+            <h3>Memorable experiences</h3>
+
+            <p>
+                Discover beautiful places and experiences
+                worth remembering.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- CTA -->
+<section class="cta-section">
+
+    <div class="cta-content">
+
+        <p class="section-label">
+            YOUR NEXT ESCAPE
+        </p>
+
+        <h2>
+            Your next beautiful
+            <em>stay is waiting.</em>
+        </h2>
+
+        <a href="stays.html" class="cta-button">
+            Explore all stays <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+<section class="newsletter-section">
+
+    <div class="newsletter-content">
+
+        <p class="section-label">
+            THE VÉLORA JOURNAL
+        </p>
+
+        <h2>
+            Stay in the know.
+        </h2>
+
+        <p>
+            Discover beautiful destinations, new stays,
+            and travel inspiration delivered to your inbox.
+        </p>
+
+    </div>
+
+
+    <form class="newsletter-form">
+
+        <input
+            type="email"
+            placeholder="Your email address"
+            required
+        >
+
+        <button type="submit">
+            Subscribe →
+        </button>
+
+    </form>
+
+</section>
+    </main>
+
+    <footer>
+        <!-- Footer will go here -->
+         <footer class="footer" id="contact">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <a href="#" class="footer-logo">
+                VÉLORA
+            </a>
+
+            <p>
+                Stay somewhere beautiful.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Explore</h4>
+
+            <a href="#stays">Stays</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#">Experiences</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>About</h4>
+
+            <a href="#about">Our story</a>
+            <a href="#">Journal</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Follow</h4>
+
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">Facebook</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 VÉLORA. All rights reserved.
+        </p>
+
+        <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+
+    </div>
+
+</footer>
+    </footer>
+
+    <script src="velora.js"></script>
+</body>
+</html>
