@@ -87,6 +87,7 @@ button {
     display: flex;
     align-items: center;
   gap: 3px;
+  flex-direction: row;
 }
 .logm{
     margin-top: 32px;
@@ -95,6 +96,8 @@ button {
     
 }
 .logt{
+    display: flex;
+    flex-direction: row;
     font-size: 32px;
 margin-left: -22px;
 padding-left: 0;
@@ -1216,7 +1219,9 @@ body {
 body.loaded {
     opacity: 1;
 }
-
+.log{
+    bottom: 30px;
+}
 /* =========================
    STAYS PAGE
 ========================= */
